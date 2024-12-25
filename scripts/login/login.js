@@ -1,6 +1,6 @@
 function renderLoginPage() {
   let loginHTML = `
-  <div class="arrow-button">&#8680;</div>
+  <div class="arrow-button js-arrow-button">&#8680;</div>
 
   <div class="customer-login-container">
     <div class="login-message">Trainee Login</div>
@@ -15,7 +15,7 @@ function renderLoginPage() {
     </div>
 
     <div>
-      <button class="login-button">Login</button>
+      <button class="login-button js-login-button">Login</button>
     </div>
   
     <div class="sign-up-container">
@@ -35,7 +35,7 @@ function renderLoginPage() {
       <input placeholder="Enter your password" class="password-input">
     </div>
     <div>
-      <button class="login-button">Login</button>
+      <button class="login-button js-login-button">Login</button>
     </div>
     <div class="sign-up-container">
       <div class="dont-have-account-message">Don't have an account?</div>
@@ -49,3 +49,14 @@ function renderLoginPage() {
 }
 
 renderLoginPage();
+
+const switchLoginContainerEl = document.querySelector('.js-login-container');
+
+document.querySelector('.js-arrow-button')
+  .addEventListener('click', () => {
+    if (switchLoginContainerEl.classList.contains('switch')) {
+      switchLoginContainerEl.classList.remove('switch');
+    } else {
+      switchLoginContainerEl.classList.add('switch');
+    }
+  });
