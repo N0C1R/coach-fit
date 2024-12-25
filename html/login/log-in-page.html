@@ -2,26 +2,65 @@
   <html>
     <head>
       <title>Log In</title>
+
+      <link rel="stylesheet" href="../../styles/log-in-page.css">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+
     </head>
     <body>
-      <div class="login-container js-login-container">
-        <div>
-          <div>Email:</div>
-          <input placeholder="Enter your email">
+      <div class="login-container">
+        <div class="arrow-button">&#8680;</div>
+
+        <div class="customer-login-container">
+          <div class="login-message">Trainee Login</div>
+          <div class="email-container">
+            <div class="email-message">Email</div>
+            <input placeholder="Enter your email" class="email-input">
+          </div>
+        
+          <div class="password-container">
+            <div class="password-message">Password</div>
+            <input placeholder="Enter your password" class="password-input">
+          </div>
+  
+          <div>
+            <button class="login-button">Login</button>
+          </div>
+        
+          <div class="sign-up-container">
+            <div class="dont-have-account-message">Don't have an account?</div>
+            <a href="sign-up.html" class="sign-up-link">Sign Up</a>
+          </div>
         </div>
-      
-        <div>
-          <div>Password:</div>
-          <input placeholder="Enter your password">
-        </div>
-      
-        <div>
-          <div>Don't have an account?</div>
-          <a href="sign-up.html">
-            <span>Sign Up</span>
-          </a>
+
+        <div class="coach-login-container">
+          <div class="login-message">Trainer Login</div>
+          <div class="email-container">
+            <div class="email-message">Email</div>
+            <input placeholder="Enter your email" class="email-input">
+          </div>
+          <div class="password-container">
+            <div class="password-message">Password</div>
+            <input placeholder="Enter your password" class="password-input">
+          </div>
+          <div>
+            <button class="login-button">Login</button>
+          </div>
+          <div class="sign-up-container">
+            <div class="dont-have-account-message">Don't have an account?</div>
+            <a href="sign-up.html" class="sign-up-link">Sign Up</a>
+          </div>
         </div>
       </div>
+
+      
 
       <script src="../../scripts/customer-view/log-in-sign-up-page/log-in.js"></script>
     </body>
