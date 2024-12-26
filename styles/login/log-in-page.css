@@ -1,0 +1,187 @@
+body, html {
+  font-family: "Oxygen", serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.arrow-button {
+  position: absolute;
+  background-color: white;
+  color: rgb(0, 2, 66);
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border: 3px solid rgb(240, 240, 240);
+  border-radius: 200px;
+  cursor: pointer;
+  transition: background-color 0.1s, color 0.1s, border-color 0.1s, transform 0.3s ease;
+  z-index: 2;
+}
+
+.arrow-button:hover {
+  background-color: rgb(0, 2, 66);
+  color: white;
+  border-color: white;
+}
+
+.arrow-button.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.customer-login-container,
+.coach-login-container {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.initial .customer-login-container, .switch .coach-login-container {
+  box-shadow: 1px 1px 20px rgb(199, 199, 199);
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 425px;
+  opacity: 0.7;
+}
+
+.initial .coach-login-container, .switch .customer-login-container {
+  background-color: rgb(0, 2, 66);
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  width: 425px;
+}
+
+.login-message {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-family: 'Goldman', serif;
+  
+}
+
+.initial .customer-login-container .login-message, .switch .coach-login-container .login-message {
+  text-shadow: 1px 1px 10px grey;
+}
+
+.email-container,
+.password-container {
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.email-message,
+.password-message {
+  font-size: 30px;
+}
+
+.email-input,
+.password-input {
+  margin-top: 7px;
+  width: 350px;
+  height: 25px;
+  padding-left: 5px;
+  border: none;
+}
+
+.initial .customer-login-container .email-input, 
+.initial .customer-login-container .password-input,
+.switch .coach-login-container .email-input, 
+.switch .coach-login-container .password-input{
+  box-shadow: 1px 1px 20px grey;
+}
+
+.login-button {
+  font-family: 'Oxygen', serif;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 40px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.15s, opacity 0.15s;
+}
+
+.initial .customer-login-container .login-button,
+.switch .coach-login-container .login-button {
+  background-color: rgb(0, 2, 66);
+  color: white;
+  border: none;
+  box-shadow: 3px 3px 20px grey;
+}
+
+.initial .coach-login-container .login-button,
+.switch .customer-login-container .login-button {
+  background-color: white;
+  color: rgb(0, 2, 66);
+  border:  white;
+}
+
+.initial .customer-login-container .login-button:hover,
+.switch .coach-login-container .login-button:hover {
+  opacity: 0.7;
+}
+
+.initial .customer-login-container .login-button:active,
+.switch .coach-login-container .login-button:active {
+  opacity: 0.3;
+}
+
+.initial .coach-login-container .login-button:hover,
+.switch .customer-login-container .login-button:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.initial .coach-login-container .login-button:active,
+.switch .coach-login-container .login-button:active {
+  opacity: 0.7;
+}
+
+.sign-up-container {
+  display: grid;
+  text-align: center;
+}
+
+.sign-up-link {
+  cursor: pointer;
+  transition: opacity 0.1s;
+}
+
+.sign-up-link:hover {
+  opacity: 0.7;
+}
+
+.sign-up-link:active {
+  opacity: 0.3;
+}
+
+.initial .customer-login-container .sign-up-link,
+.switch .coach-login-container .sign-up-link {
+  color: rgb(0, 2, 66);
+}
+
+.initial .coach-login-container .sign-up-link,
+.switch .customer-login-container .sign-up-link {
+  color: white;
+}
