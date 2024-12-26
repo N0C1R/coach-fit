@@ -3,7 +3,7 @@ const signUpContainerEl = document.querySelector('.js-sign-up-container');
 
 function renderSignUpPage() {
   const signUpHTML = `
-    <div class="arrow-button js-arrow-button">&#8678;</div>
+    <div class="arrow-button js-arrow-button">&lArr;</div>
 
     <div class="customer-container">
       <div class="sign-up-message">Trainee Sign Up</div>
@@ -98,13 +98,9 @@ arrowButtonEl
       signUpContainerEl.classList.remove('switch');
       signUpContainerEl.classList.add('initial');
       arrowButtonEl.classList.remove('rotate');
-      loginLinkCoachEl.href('login.html')
-      loginLinkCustomerEl.removeAttribute('href');
     } else {
       signUpContainerEl.classList.add('switch');
       signUpContainerEl.classList.remove('initial');
       arrowButtonEl.classList.add('rotate');
-      loginLinkCoachEl.removeAttribute('href');
-      loginLinkCustomerEl.setAttribute('href', 'login.html');
     }
   });

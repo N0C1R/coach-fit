@@ -15,6 +15,18 @@ body, html {
   width: 100%;
 }
 
+@media (max-width: 1100px) {
+  .sign-up-container {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 650px) {
+  .sign-up-container {
+    transform: scale(0.5);
+  }
+}
+
 .arrow-button {
   position: absolute;
   background-color: white;

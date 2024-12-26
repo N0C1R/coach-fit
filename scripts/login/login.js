@@ -2,7 +2,7 @@ const loginContainerEl = document.querySelector('.js-login-container');
 
 function renderLoginPage() {
   let loginHTML = `
-  <div class="arrow-button js-arrow-button">&#8678;</div>
+  <div class="arrow-button js-arrow-button">&lArr;</div>
 
   <div class="customer-login-container">
     <div class="login-message">Trainee Login</div>
