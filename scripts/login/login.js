@@ -1,6 +1,8 @@
+const loginContainerEl = document.querySelector('.js-login-container');
+
 function renderLoginPage() {
   let loginHTML = `
-  <div class="arrow-button js-arrow-button">&#8680;</div>
+  <div class="arrow-button js-arrow-button">&#8678;</div>
 
   <div class="customer-login-container">
     <div class="login-message">Trainee Login</div>
@@ -42,7 +44,9 @@ function renderLoginPage() {
       <a href="sign-up.html" class="sign-up-link">Sign Up</a>
     </div>
   </div>
-  `
+  `;
+
+  loginContainerEl.classList.add('initial');
 
   document.querySelector('.js-login-container')
     .innerHTML = loginHTML;
@@ -50,13 +54,17 @@ function renderLoginPage() {
 
 renderLoginPage();
 
-const switchLoginContainerEl = document.querySelector('.js-login-container');
+const arrowButtonEl = document.querySelector('.js-arrow-button');
 
-document.querySelector('.js-arrow-button')
+arrowButtonEl
   .addEventListener('click', () => {
-    if (switchLoginContainerEl.classList.contains('switch')) {
-      switchLoginContainerEl.classList.remove('switch');
+    if (loginContainerEl.classList.contains('switch')) {
+      loginContainerEl.classList.remove('switch');
+      loginContainerEl.classList.add('initial');
+      arrowButtonEl.classList.remove('rotate');
     } else {
-      switchLoginContainerEl.classList.add('switch');
+      loginContainerEl.classList.add('switch');
+      loginContainerEl.classList.remove('initial');
+      arrowButtonEl.classList.add('rotate');
     }
   });
