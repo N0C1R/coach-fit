@@ -12,7 +12,7 @@ export function renderFeaturesContainer() {
     <div class="body-text">Take your coaching to the next level with CoachFit today!</div>
 
     <div>
-      <a href="./login/sign-up.html">
+      <a href="./login/sign-up.html" target="_blank">
         <button class="sign-up-button">Sign Up</button>
       </a>
     </div>
