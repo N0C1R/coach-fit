@@ -1,3 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-image: url('../../images/test-x-o.jpg');
   background-size: 2500px;
@@ -11,8 +18,8 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);  /* Transparent overlay */
-  z-index: -1;  /* Ensures the overlay stays behind the content */
+  background-color: rgba(84, 93, 110, 0.5);
+  z-index: -1;
 }
 
 .title {
@@ -29,11 +36,35 @@ body::before {
   margin-top: 40px;
 }
 
-.features-container .sign-up-button {
+.sign-up-button {
   font-size: 35px;
-  background-color: rgb(0, 2, 66);
   border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.features-container .sign-up-button {
+  background-color: rgb(0, 2, 66);
   color: white;
+}
+
+.sign-up-button:hover {
+  opacity: 0.7;
+}
+
+.sign-up-button:active {
+  opacity: 0.5;
+}
+
+.about-us-container .sign-up-button {
+  font-size: 35px;
+  border: none;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 30px;
@@ -47,4 +78,12 @@ body::before {
   margin-top: 40px;
   font-size: 20px;
   font-family: "League Spartan", serif;
+}
+
+.features-container .link {
+  color: black;
+}
+
+.about-us-container .link {
+  color: white;
 }

@@ -2,7 +2,7 @@ const loginContainerEl = document.querySelector('.js-login-container');
 
 function renderLoginPage() {
   let loginHTML = `
-  <div class="arrow-button js-arrow-button">&#8678;</div>
+  <div class="arrow-button js-arrow-button">&rArr;</div>
 
   <div class="customer-login-container">
     <div class="login-message">Trainee Login</div>
@@ -46,7 +46,7 @@ function renderLoginPage() {
   </div>
   `;
 
-  loginContainerEl.classList.add('initial');
+  loginContainerEl.classList.add('switch');
 
   document.querySelector('.js-login-container')
     .innerHTML = loginHTML;
@@ -61,10 +61,10 @@ arrowButtonEl
     if (loginContainerEl.classList.contains('switch')) {
       loginContainerEl.classList.remove('switch');
       loginContainerEl.classList.add('initial');
-      arrowButtonEl.classList.remove('rotate');
+      arrowButtonEl.classList.add('rotate');
     } else {
       loginContainerEl.classList.add('switch');
       loginContainerEl.classList.remove('initial');
-      arrowButtonEl.classList.add('rotate');
+      arrowButtonEl.classList.remove('rotate');
     }
   });

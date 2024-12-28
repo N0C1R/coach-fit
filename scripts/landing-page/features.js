@@ -6,7 +6,7 @@ export function renderFeaturesContainer() {
     </div>
 
     <div class="section-page-link">
-      For a more in depth guide of CoachFit checkout our <a href="features.html" target="_blank">features</a> page
+      For a more in depth guide of CoachFit checkout our <a href="features.html" target="_blank" class="link">features</a> page
     </div>
 
     <div class="body-text">Take your coaching to the next level with CoachFit today!</div>
