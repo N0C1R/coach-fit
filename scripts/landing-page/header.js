@@ -1,8 +1,8 @@
 export function renderHeader() {
   let headerHTML = `
     <div class="header-left"></div>
-    <a href="../login/sign-up.html" class="coachfit-logo-link">
-      <img src="../../images/coach-fit-navy-white.png" class="coachfit-logo">
+    <a href="./login/sign-up.html" class="coachfit-logo-link">
+      <img src="../images/coach-fit-navy-white.png" class="coachfit-logo">
     </a>
       
     <div class="header-middle">
@@ -15,9 +15,9 @@ export function renderHeader() {
 
     <div class="header-right">
       <div class="login-links">
-        <a href="../login/sign-up.html" class="sign-up-link">Sign Up</a>
+        <a href="./login/sign-up.html" class="sign-up-link">Sign Up</a>
       
-        <a href="../login/login.html" class="login-link">Login</a>
+        <a href="./login/login.html" class="login-link">Login</a>
       </div>
     </div>
   `;

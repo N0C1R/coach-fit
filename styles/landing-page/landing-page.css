@@ -1,3 +1,20 @@
+body {
+  background-image: url('../../images/test-x-o.jpg');
+  background-size: 2500px;
+  background-repeat: no-repeat;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);  /* Transparent overlay */
+  z-index: -1;  /* Ensures the overlay stays behind the content */
+}
+
 .title {
   font-family: "Goldman", serif;
   font-size: 70px;
@@ -22,6 +39,12 @@
   padding-right: 30px;
   padding-left: 30px;
   border-radius: 50px;
-  margin-top: 30px;
+  margin-top: 40px;
   cursor: pointer;
+}
+
+.section-page-link {
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: "League Spartan", serif;
 }
